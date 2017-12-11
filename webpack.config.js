@@ -3,12 +3,12 @@ var webpack = require('webpack');
 
 module.exports = {
   devServer: {
-      contentBase: path.resolve(__dirname, '_build/html'),
+      contentBase: path.resolve(__dirname, 'build/html'),
       host: '0.0.0.0',
       port: process.env.PORT || 3003
   },
   entry: {
-      index: path.resolve(__dirname, 'src/index.js')
+      index: path.resolve(__dirname, 'source/index.js')
   },
   output: {
       path: path.resolve(__dirname, 'build'),
