@@ -4,10 +4,11 @@ api doc for makeblock projects
 
 # Install
 
-Install sphinx
+Install sphinx and theme
 
 ```
 pip install sphinx
+pip install sphinx_rtd_theme
 ```
 
 Clone projects and install enviroments
