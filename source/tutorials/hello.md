@@ -8,5 +8,5 @@ computer to say, "Hello, World!".
 
 This is easy with codey::
 
-    from codey import *
+    import codey
     codey.show("Hello, World!")

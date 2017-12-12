@@ -98,13 +98,26 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Codey’s python API</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">表情面板</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">陀螺仪</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">红外接收器</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">按钮</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">小奔</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id6">齿轮电位器</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id7">光线传感器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">小奔</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">函数</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">示例</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">表情面板</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id5">函数</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">示例</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#rgb-led">RGB LED 灯</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id7">函数</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">示例</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">陀螺仪</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">红外接收器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id11">按钮</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id12">齿轮电位器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id13">光线传感器</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="scratch-sprite.html">Scratch spirte’s python API</a></li>
@@ -175,25 +188,129 @@
   <div class="section" id="codey-s-python-api">
 <h1>Codey’s python API<a class="headerlink" href="#codey-s-python-api" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id1">
-<h2>表情面板<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-</div>
+<h2>小奔<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>小奔是底盘，带有两个轮子和光线传感器。</p>
 <div class="section" id="id2">
-<h2>陀螺仪<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h3>函数<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>以 50 的动力前进，持续 1 秒</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">rocky</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>以 50 的动力后退，持续 1 秒</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">rocky</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>以 50 的动力左转，持续 1 秒</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">rocky</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>以 50 的动力右转，持续 1 秒</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">rocky</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="id3">
-<h2>红外接收器<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h3>示例<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">rocky</span>
+
+<span class="n">rocky</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">rocky</span><span class="o">.</span><span class="n">back</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">rocky</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">rocky</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="id4">
-<h2>按钮<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-</div>
+<h2>表情面板<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>表情面板是一个 8*16 的 led 矩阵。每一个 led 灯都可以通过 api 来控制</p>
 <div class="section" id="id5">
-<h2>小奔<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<h3>函数<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>显示图案【^_^】持续（1）秒</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">codey</span><span class="o">.</span><span class="n">face</span><span class="p">(</span><span class="s1">&#39;00001020402012020212204020100000&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>显示图案【^_^】</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">codey</span><span class="o">.</span><span class="n">face</span><span class="p">(</span><span class="s1">&#39;00001020402012020212204020100000&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>显示 “hello world”</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">codey</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s1">&#39;hello world&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>熄灭屏幕</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">codey</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>点亮x:(0) y:(0)</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">codey</span><span class="o">.</span><span class="n">pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>熄灭x:(0) y:(0)</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">codey</span><span class="o">.</span><span class="n">pixel_off</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="id6">
-<h2>齿轮电位器<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<h3>示例<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<img alt="../_images/face-panel.png" src="../_images/face-panel.png" />
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">codey</span>
+
+<span class="n">codey</span><span class="o">.</span><span class="n">face</span><span class="p">(</span><span class="s1">&#39;00001020402012020212204020100000&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">codey</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+<span class="n">codey</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="n">codey</span><span class="o">.</span><span class="n">pixel</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
 </div>
+</div>
+</div>
+<div class="section" id="rgb-led">
+<h2>RGB LED 灯<a class="headerlink" href="#rgb-led" title="Permalink to this headline">¶</a></h2>
+<p>在小奔的中间有一个 rgb led 灯，支持设置不同的颜色</p>
 <div class="section" id="id7">
-<h2>光线传感器<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<h3>函数<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>LED 亮起【红】，持续（1）秒</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">codey</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s1">&#39;#334455&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>LED 亮起【红】</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">codey</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s1">&#39;#334455&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>熄灭 LED</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">codey</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s1">&#39;#000&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>设置LED的RGB值为红（255）绿（0）蓝 （0）</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">codey</span><span class="o">.</span><span class="n">rgb</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id8">
+<h3>示例<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">codey</span>
+
+<span class="n">codey</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s1">&#39;#ff0000&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">codey</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s1">&#39;#00ff15&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">codey</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s1">&#39;#0021ff&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id9">
+<h2>陀螺仪<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id10">
+<h2>红外接收器<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id11">
+<h2>按钮<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id12">
+<h2>齿轮电位器<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id13">
+<h2>光线传感器<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -219,7 +336,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, ide team.
+        &copy; Copyright 2017, Makeblock Team.
 
     </p>
   </div>

@@ -46,8 +46,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'mdocs'
-copyright = u'2017, ide team'
-author = u'ide team'
+copyright = u'2017, Makeblock Team'
+author = u'Makeblock Team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -139,7 +139,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'mdocs.tex', u'mdocs Documentation',
-     u'ide team', 'manual'),
+     u'Makeblock Team', 'manual'),
 ]
 
 
