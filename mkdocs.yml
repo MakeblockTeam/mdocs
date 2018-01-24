@@ -5,8 +5,8 @@ copyright: Copyright (c) 2018 Makeblock Team
 
 pages:
 - Tutorials:
-    - 'introduction': 'index.md'
-    - 'hello world': 'tutorials/helloworld.md'
+    - 'Introduction': 'index.md'
+    - 'Hello world': 'tutorials/helloworld.md'
 - API Reference:
-    - 'codey rocky python api': 'api/codey.md'
-    - 'scratch python api': 'api/scratch-sprite.md'
+    - 'codey rocky Python API': 'api/codey.md'
+    # - 'scratch python api': 'api/scratch-sprite.md'
