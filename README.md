@@ -1,24 +1,11 @@
-# mdocs
-api doc for makeblock projects
+# Welcome to mdocs
 
 
-# Install
+build with [mkdocs.org](http://mkdocs.org).
 
-Install sphinx and theme
+## Commands
 
-```
-pip install sphinx
-pip install sphinx_rtd_theme
-```
-
-Clone projects and install enviroments
-
-```
-npm install
-```
-
-# Start
-
-```
-npm run build  && npm start
-```
+* `mkdocs new [dir-name]` - Create a new project.
+* `mkdocs serve` - Start the live-reloading docs server.
+* `mkdocs build` - Build the documentation site.
+* `mkdocs help` - Print this help message.

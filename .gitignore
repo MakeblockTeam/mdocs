@@ -6,6 +6,4 @@ node_modules
 npm-*
 
 # Testing
-/.nyc_output
-/coverage
-build
+site/
