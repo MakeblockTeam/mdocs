@@ -1,28 +1,28 @@
-# 小程
+# Codey
 
-**函数**
+**Function**
 
-当小程启动时
+when codey starts up
 
     import codey
 
-当接收到（message）
+when receive（message）
 
     def callback():
         pass
     codey.on_message(msgstr, callback)
 
-广播 'hello'
+broadcast 'hello'
 
     codey.message('hello')
 
-**示例1**
+**Example1**
 
     import codey
 
     codey.show('hello world')
 
-**示例2**
+**Example2**
 
     import codey
 
@@ -37,30 +37,30 @@
     codey.on_message('hello', on_message_callback)
 
 
-# 小奔
+# Rocky
 
-小奔是底盘，带有两个轮子，带有红外发射器、红外接收器、RGB 颜色传感器、感光传感器 和白灯发射器。
+rocky is the chassis，containing two wheels, an IR emitter, an IR receiver, a RGB color sensor, a light sensor and a white light emitter
 
-**函数**
+**Function**
 
-以 50 的动力前进，持续 1 秒
+move forward at power 50 for 1 sec
 
     rocky.forward(50, 1)
 
-以 50 的动力后退，持续 1 秒
+move backward at power 50 for 1 sec
 
     rocky.backward(50, 1)
 
-以 50 的动力左转，持续 1 秒
+turn left at power 50 for 1 sec
 
     rocky.left(50, 1)
 
-以 50 的动力右转，持续 1 秒
+turn right at power 50 for 1 sec
 
     rocky.right(50, 1)
 
 
-**示例**
+**Example**
 
 ```
     import rocky
@@ -72,13 +72,12 @@
 ```
 
 
-# 表情面板
+# Face Panel
 
-表情面板是一个 8*16 的 led 矩阵。每一个 led 灯都可以通过 api 来控制
+The face panel is a  8*16 led matrix。Each of the led lights is controlled by api.
+**Function**
 
-**函数**
-
-显示图案【^_^】持续（1）秒
+show image【^_^】for（1）sec
 
 ```
     codey.face(
@@ -92,7 +91,7 @@
         '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0', 1)
 ```
 
-显示图案【^_^】
+show image【^_^】
 
 ```
     codey.face(
@@ -106,7 +105,7 @@
         '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0')
 ```
 
-显示图案【^_^】在坐标 x [0], y[0]
+show image【^_^】at x [0], y[0]
 
 ```
     codey.face_at(
@@ -120,69 +119,67 @@
         '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0', 0, 0)
 ```
 
-显示 "hello world"
+show "hello world"
 
     codey.show('hello world')
 
-熄灭屏幕
+clear the screen
 
     codey.clear()
 
-点亮x:(0) y:(0)
+light up x:(0) y:(0)
 
     codey.pixel(x, y)
 
-熄灭x:(0) y:(0)
+light off x:(0) y:(0)
 
     codey.pixel_off(0,0)
 
-**示例**
+**Example**
 
-![face-panel](./images/face-panel.png)
+![face-panel](./images/face-panel-demo.png)
 
 ```
     import codey
-    import time
+
 
     codey.face(
         '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0'
-        '0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0'
-        '0 0 0 1 0 1 0 0 0 0 1 0 1 0 0 0'
-        '0 0 1 0 0 0 1 0 0 1 0 0 0 1 0 0'
-        '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0'
-        '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0'
-        '0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0'
+        '0 0 0 1 1 0 0 0 0 0 0 1 1 0 0 0'
+        '0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0'
+        '0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0'
+        '0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0'
+        '0 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0'
+        '0 0 0 1 1 0 0 0 0 0 0 1 1 0 0 0'
         '0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0', 1)
     codey.show('hello')
-    time.sleep(1)
     codey.clear()
-    time.sleep(1)
     codey.pixel(3, 3)
 ```
 
-# RGB LED 灯
+# RGB LED
 
-在小奔的中间有一个 rgb led 灯，支持设置不同的颜色
+In the rocky, there is a rgb led light，which supports to set different colors.
 
-**函数**
+**Function**
 
-LED 亮起【红】，持续（1）秒
+LED lights up【red】，for（1）sec
 
     codey.color('#334455', 1)
 
-LED 亮起【红】
+LED lights up【red】
 
     codey.color('#334455')
 
-熄灭 LED
+ LED lights off
 
     codey.color('#000')
 
-设置LED的RGB值为红（255）绿（0）蓝 （0）
+set RGB LED value to red（255）green（0）blue（0）
 
     codey.rgb(255, 0, 0)
 
-**示例**
+**Example**
 
     import codey
 
@@ -191,94 +188,94 @@ LED 亮起【红】
     codey.color('#0021ff', 1)
 
 
-# 扬声器
+# Loud Speaker
 
 
-**函数**
+**Function**
 
-可选的声音参数如下：
+sound parameters available to select：
 
-- `hello.wav` : 哈喽
-- `hi.wav` : 嗨
-- `bye.wav` : 拜
-- `yeah.wav` : 耶
-- `wow.wav` : 哇哦
-- `laugh.wav` : 笑声
-- `hum.wav` : 哼唱
-- `sad.wav` : 难过
-- `sigh.wav` : 叹气
-- `annoyed.wav` : 哼！
-- `angry.wav` : 生气
-- `surprised.wav` : 惊吓
-- `yummy.wav` : 撒娇
-- `curious.wav` : 好奇
-- `embarrassed.wav` : 尴尬
-- `ready.wav` : 准备
-- `sprint.wav` : 冲刺
-- `sleepy.wav` : 打呼
-- `meow.wav` : 喵
-- `start.wav` : 启动
-- `switch.wav` : 开关
-- `beeps.wav` : 哔哔
-- `buzzing.wav` : 蜂鸣
-- `exhaust.wav` : 排气
-- `explosion.wav` : 爆炸
-- `gotcha.wav` : 获取
-- `hurt.wav` : 痛苦
-- `jump.wav` : 跳动
-- `laser.wav` : 激光
-- `level up.wav` : 升级
-- `low energy.wav` : 低能量
-- `metal clash.wav` : 金属音
-- `prompt tone.wav` : 提示
-- `right.wav` : 正确
-- `wrong.wav` : 错误
-- `ring.wav` : 铃声
-- `score.wav` : 得分
-- `shot.wav` : 发射
-- `step_1.wav` : 脚步声1
-- `step_2.wav` : 脚步声2
-- `wake.wav` : 激活
-- `warning.wav` : 警告
+- `hello.wav` : hello
+- `hi.wav` :hi
+- `bye.wav` : bye
+- `yeah.wav` : yeah
+- `wow.wav` : wow
+- `laugh.wav` : laugh
+- `hum.wav` : hum
+- `sad.wav` : sad
+- `sigh.wav` : sigh
+- `annoyed.wav` : annoyed
+- `angry.wav` : angry
+- `surprised.wav` :  scared
+- `yummy.wav` :  pettish
+- `curious.wav` : curious
+- `embarrassed.wav` : embarrassed
+- `ready.wav` : ready
+- `sprint.wav` :  sprint
+- `sleepy.wav` :  snore
+- `meow.wav` :  meow
+- `start.wav` :  start
+- `switch.wav` :  switch
+- `beeps.wav` :  beeps
+- `buzzing.wav` :  buzz
+- `exhaust.wav` :  air-out
+- `explosion.wav` :  explosion
+- `gotcha.wav` :  gotcha
+- `hurt.wav` :  painful
+- `jump.wav` :  jump
+- `laser.wav` :  laser
+- `level up.wav` :  level-up
+- `low energy.wav` :  low-energy
+- `metal clash.wav` :  metal-clash
+- `prompt tone.wav` :  prompt-tone
+- `right.wav` :  right
+- `wrong.wav` : wrong
+- `ring.wav` :  ringtone
+- `score.wav` :  score
+- `shot.wav` :  shot
+- `step_1.wav` :  step_1
+- `step_2.wav` : step_2
+- `wake.wav` :  activate
+- `warning.wav` :  warning
 
 
-播放声音【哈喽】。该次播放可被打断。
+play sound【hello】. The sound can be interrupted.
     codey.say('hello.wav')
 
-播放声音【哈喽】直到结束。该次播放，不会被打断
+play sound【hello】until done. The sound won't be interrupted.
 
     codey.say('hello.wav', True)
 
-停止声音
+stop the sound
 
     codey.mute()
 
-播放音符（60）以（0.25）拍。参照表待定。
+play note（60）for（0.25）beat。参照表待定。
 
     codey.play(435, 500)
 
-停止（0.25）拍
+stop（0.25）beat
 
     todo
 
-播放声音以频率 (700) 赫兹持续 (1) 秒
+play sound at frequency of  (700) HZ for (1) sec
 
     todo
 
-调整音量（-10）
+change volume by（-10）
 
     codey.change_volume(-10)
 
-将音量设定为（100）
+set volume to（100）
 
     codey.set_volume(100)
 
-音量
+volume
 
     codey.get_volume()
 
 
-**示例**
+**Example**
 
     import codey
 
@@ -287,25 +284,25 @@ LED 亮起【红】
     codey.say('hi.wav', True)
 
 
-# 陀螺仪
+# Gyroscope
 
 
-**函数**
+**Function**
 
-当小程摇晃
+when codey is shaking
 
     def callback():
         pass
     codey.on_shake(callback)
 
-当小程【向前，向后，向左，向右】倾斜。第一个参数可选项为：``forward``，``backward``，``left``，``right``。
+when codey is【forward，backward，leftward，rightward】tilted。The first parameter available to select is：``forward``，``backward``，``left``，``right``。
 
     def callback():
         pass
     codey.on_tilt('forward',callback)
 
 
-**示例**
+**Example**
 
     import codey
 
@@ -315,31 +312,31 @@ LED 亮起【红】
     codey.on_shake(on_shake_callback)
 
 
-<!-- # 红外接收发射器
+# IR reception emitter
 ***
 
-**函数**
+**Function**
 
-**示例** -->
-
-
-# 按钮
+**Example>
 
 
-小程有三个按钮，分别为 ``A``, ``B``, ``C``。
+# Button
 
-**函数**
 
-当按下按钮【A, B, C】
+codey has three buttons, ``A``, ``B``, ``C``。
+
+**Function**
+
+when button【A, B, C】is pressed
 
     def callback():
         pass
     codey.on_button('A', callback)
 
-第一个参数可以为：``A``，``B``，``C``。
+The first parameter can be：``A``，``B``，``C``。
 
 
-**示例**
+**Example**
 
     import codey
 
@@ -349,20 +346,20 @@ LED 亮起【红】
     codey.on_button('A', on_button_callback)
 
 
-# 齿轮电位器
+# Gear Potentiometer
 
 
-**函数**
+**Function**
 
-**示例**
-
-
-# 光线传感器
+**Example**
 
 
-**函数**
+# Light Sensor
 
-当光线强度＜（10）
+
+**Function**
+
+when light intensity ＜（10）
 
     def callback():
         pass
@@ -370,7 +367,7 @@ LED 亮起【红】
     codey.on_light_under(50, callback)
 
 
-**示例**
+**Example**
 
     import codey
 
@@ -380,12 +377,12 @@ LED 亮起【红】
     codey.on_light_under(10, on_light_under_callback)
 
 
-# 声音传感器
+# Sound Sensor
 
 
-**函数**
+**Function**
 
-当【响度】＞（10）
+when【loudness】＞（10）
 
     def callback():
         pass
@@ -393,7 +390,7 @@ LED 亮起【红】
     codey.on_sound_over(10, callback)
 
 
-**示例**
+**Example**
 
     import codey
 
@@ -403,32 +400,32 @@ LED 亮起【红】
     codey.on_sound_over(10, on_sound_over_callback)
 
 
-# 通用语法-控制
+# General Syntax-Control
 ****
 
-**函数**
+**Function**
 
-等待 1 秒
+wait for 1 sec
 
     import time
     time.sleep(1)
 
-重复 10 次
+repeat for 10 times
 
     for count in range(10):
         pass
 
-重复执行
+forever
 
     while True:
         pass
 
-如果，那么
+if...then
 
     if False:
         pass
 
-如果，那么，否则
+ if...then..else
 
     if False:
         pass
@@ -436,131 +433,131 @@ LED 亮起【红】
     else:
         pass
 
-等待直到
+wait until
 
     while not False:
         pass
 
-重复执行，直到
+repeat until
 
     while not False:
         pass
 
-# 通用语法-运算
+#  General Syntax-Operators
 ****
 
-**函数**
+**Function**
 
-1 加 1
+1 + 1
 
     1 + 1
 
-1 减 1
+1 - 1
 
     1 - 1
 
-1 乘 1
+1 * 1
 
     1 * 1
 
-1 除以 1
+1 / 1
 
     1 / 1
 
-在 1 到 10 之间随机取一个数
+pick random 1 to 10
 
     import random
     random.randint(1, 10)
 
-1 小于 2
+1 < 2
 
     1 < 2
 
-1 等于 1
+1 == 1
 
     1 == 1
 
-2 大于 1
+2 < 1
 
     2 < 1
 
-与
+and
 
     False and False
 
-或
+or
 
     False or False
 
-非
+not
 
     not True
 
-连接字符串 ``hello`` 与 ``world``
+connect ``hello`` and ``world``
 
     str('hello') + str('world')
 
-字符串 ``word`` 中的第一个字符
+the 1 string of ``word``
 
     'world'[0]
 
-字符串 ``word`` 的长度
+length of ``word``
 
     len('world')
 
-字符串 ``hello`` 是否包含字符串 ``world``？
+ ``hello`` contains ``world``？
 
     str('hello').find(str('world')) > -1
 
-1 除以 3 的余数
+1 mod 3
 
     1 % 3
 
-将 ``3.4`` 四舍五入
+round ``3.4``
 
     round(3.4)
 
-``-1`` 的绝对值
+abs``-1``
 
     import math
     math.fabs(-1)
 
-将 ``3.4`` 向上取整
+ceiling ``3.4``
 
     import math
     math.ceil(3.4)
 
-``4`` 平方根
+sqrt``4``
 
     import math
     math.sqrt(4)
 
-``2`` 的正弦
+ sin``2``
 
     import math
     math.sin(2 / 180.0 * math.pi)
 
-``2`` 的余弦
+cos``2``
 
     import math
     math.cos(2 / 180.0 * math.pi)
 
-``2`` 的正切
+tan``2``
 
     import math
     math.tan(2 / 180.0 * math.pi)
 
-``2`` 的反正弦
+asin``2``
 
     import math
     math.asin(2) / math.pi * 180
 
-``2`` 的反余弦
+acos``2``
 
     import math
     math.acos(2) / math.pi * 180
 
-``2`` 的反正切
+atan``2``
 
     import math
     math.atan(2) / math.pi * 180

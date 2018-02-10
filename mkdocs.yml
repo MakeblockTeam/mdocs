@@ -8,5 +8,5 @@ pages:
     - 'Introduction': 'index.md'
     - 'Hello, World!': 'tutorials/helloworld.md'
 - API REFERENCE:
-    - 'codey rocky Python API': 'api/codey.md'
+    - 'Codey Rocky Python API': 'api/codey.md'
     # - 'scratch 精灵图 ': 'api/scratch-sprite.md'

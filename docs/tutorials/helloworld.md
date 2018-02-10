@@ -1,7 +1,7 @@
-一般来讲，学习一门编程语言的第一行代码应该是输出: “你好，世界!”。
+ When you learn a programming language, the first code line should be : "Hello, World!"
 
 
-小程实现起来非常简单::
+codey is quite easy to use::
 
 ```
     import codey

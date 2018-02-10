@@ -49,7 +49,7 @@ Alpha.8 has 12 new examples programs. Some of the projects in this document can 
 
 First, power on your codey. Next, connect the codey with a computer via the USB cable or the Bluetooth adapter.
 
-1. 打开mblock软件，点击“请连接设备” Start the software mblock. Click Connect Device.
+1. Start the software mblock. Click Connect Device.
 
 ![codey](image/6.png)
 
@@ -148,7 +148,7 @@ This program includes two scripts. One script is designed to make codey repeat t
 
 ## 4.Images Coordinates ***（Intermediate ）***
 
-1. 该项目建议使用以下积木。
+1. This demo uses the following blocks
 
 ![codey](image/26.png)
 
