@@ -11,13 +11,6 @@
 >Support softwware and version：mblock5 Alpha.8
 
 
-## Forewords
-To all the supporters for codey rocky, thanks so much for your support to the funding project this time. Currently, codey rocky supports the software mblock 5 Alpha.8, which is a beta version. However, we will keep optimizing the software until the official version is released.
-If you have any trouble when using codey rocky and mblock 5, please join the online QQ group 591221475 . We are always ready to help you out.
-The Alpha.8 version has lots of new features and functions. Therefore, this document is designed to give a brief introduction to the functions of mblock in a project-based manner. Hopefully, the following projects can be inspiring for you to create your own projects.
-
-
-
 ## Download
 
 ![codey](image/2.png)
