@@ -17,7 +17,7 @@
 
  For the latest version, please go to the following website:
 
-[http://www.mblock.cc/zh-home/software/mblock/mblock5/](http://www.mblock.cc/zh-home/software/mblock/mblock5/)
+[http://www.mblock.cc/software/mblock/mblock5/](http://www.mblock.cc/software/mblock/mblock5/)
 
 ## Interface and Glossary
 
@@ -348,4 +348,4 @@ In this project, you can use the gear potentiometer of codey to change the sprit
 
 Want to share with us your projects and skills? Please visit us at the official forum of codey rocky:
 
-[http://bbs.makeblock.com/forum-95-1.html](http://bbs.makeblock.com/forum-95-1.html)
+[http://forum.makeblock.com/](http://forum.makeblock.com/)
